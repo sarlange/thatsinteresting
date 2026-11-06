@@ -1,0 +1,10 @@
+{
+  "name": "Lotus Garden Productivity",
+  "short_name": "Lotus Garden",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fbfaf8",
+  "theme_color": "#6d567d",
+  "description": "A realistic daily planner for tasks, events, and available time.",
+  "icons": []
+}

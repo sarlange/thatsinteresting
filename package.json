@@ -1,0 +1,27 @@
+{
+  "name": "productivity-app-alpha",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "electron-main.cjs",
+  "scripts": {
+    "app": "electron .",
+    "dev": "electron .",
+    "web": "node server.mjs",
+    "start": "electron .",
+    "package": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^38.2.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.lotusgarden.productivity",
+    "productName": "Lotus Garden Productivity",
+    "files": ["index.html", "electron-main.cjs", "package.json", "manifest.webmanifest", "sw.js"],
+    "directories": { "output": "release" },
+    "mac": { "category": "public.app-category.productivity" },
+    "win": { "target": "nsis" },
+    "linux": { "target": "AppImage", "category": "Office" }
+  }
+}
